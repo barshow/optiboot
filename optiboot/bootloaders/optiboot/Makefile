@@ -130,7 +130,7 @@ DEFS       =
 # platforms support EEPROM and large bootloaders need the eeprom functions that
 # are defined in libc, even though we explicity remove it with -nostdlib because
 # of the space-savings.
-LIBS       =  -lc
+LIBS       =  -l$(MCU_TARGET)
 
 CC         = $(GCCROOT)avr-gcc
 
